@@ -756,7 +756,7 @@ void onRender(CRules@ this)
 		//print("" + cam.targetDistance);
 
 		const int maxy = Maths::Min(waterdata.size(), (cam.getPosition().y + 384 / (cam.targetDistance * 2)) / 8);
-		const int maxx = Maths::Min(waterdata[0].size(), (cam.getPosition().x + 640 / (cam.targetDistance * 2)) / 8);
+		const int maxx = Maths::Min(waterdata[0].size(), (cam.getPosition().x + 640 / (cam.targetDistance * 2)) / 8 + 1);
 		const int startx = Maths::Max(0, (cam.getPosition().x - 640 / (cam.targetDistance * 2)) / 8);
 		const int starty = Maths::Max(0, (cam.getPosition().y - 384 /*LMAO I forgot what this number represents so I'm leaving it*/ / (cam.targetDistance * 2)) / 8);
 
